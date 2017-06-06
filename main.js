@@ -26,6 +26,8 @@ import {
   getUserMedia,
 } from 'react-native-webrtc';
 
+navigator.getUserMedia({"audio": true, "video": false});
+
 const configuration = {"iceServers": [{"url": "stun:stun.l.google.com:19302"}]};
 
 const pcPeers = {};
